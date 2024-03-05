@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    color: black;
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/map-of-zimbabwe.jpg) ;
+    background-position: center;
+    background-size:cover;
+    background-position: relative;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+
+.nav-links ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+
+
+.nav-data{
+    width: 99%;
+    color: whitesmoke;
+    position: relative;
+    top:50%;
+    left:50%;
+    bottom: -250px;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+
+.nav-data h1{
+    font-size: 62px;
+    color: whitesmoke;
+}
+
+.nav-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+
