@@ -122,7 +122,7 @@ nav{
 }
 
 .layer:hover{
-    background: red;
+    background: rgba(226,0,0,0.7);
 }
 
 
